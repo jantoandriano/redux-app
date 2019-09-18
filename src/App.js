@@ -1,11 +1,18 @@
-import React from 'react';
-import Main from './pages/Main';
+import React from "react";
+import { BrowserRouter, Route} from "react-router-dom";
+
+import Post from "./components/Post";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div>
-      <Main/>
-    </div>
+    <BrowserRouter>
+      <Navbar/>
+
+        <Route path="/" component={Post} />
+        <Route path="/home" component={Post}/>
+  
+    </BrowserRouter>
   );
 }
 

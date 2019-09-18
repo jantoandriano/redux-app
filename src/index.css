@@ -6,3 +6,14 @@
 .center {
   text-align: center;
 }
+
+.btn {
+  width: 100px;
+  height: 30px;
+  background-color: red;
+}
+
+.card-img {
+  height: 100px;
+  width: 50;
+}
